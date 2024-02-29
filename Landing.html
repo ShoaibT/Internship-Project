@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Minimilist</title>
+    <link rel="stylesheet" href="landing.css">
+</head>
+<body>
+     
+    <header>
+        <h1>Car Minimilist</h1>
+        <p>(By Shoaib Tamboli)</p>
+    </header>
+    <div class="currency-dropdown">
+        <button onclick="toggleCurrencyDropdown()">Select Currency</button>
+        <div id="currency-option">
+            <a href="#" onclick="setCurrency('INR')"> <span>&#x20B9;</span>(INR)</a>
+            <a href="#" onclick="setCurrency('USD')">$ (USD)</a>
+            <a href="#" onclick="setCurrency('EUR')">€(EUR)</a>
+            <a href="#" onclick="setCurrency('JPY')">&#165;(JPY)</a>
+        </div>
+    </div>
+    <main>
+    
+
+    <div class="sort-container">
+    <label for="sort-select">Sort by:</label>
+    <select id="sort-select">
+        <option value="low-to-high">Price: Low to High</option>
+        <option value="high-to-low">Price: High to Low</option>
+    </select>
+    </div><br><br>
+
+
+
+   
+    <section id="Nissan">
+    <section class="car-list">
+     <div class="car-card">
+    <img src="Img/altima.png" alt="Nissan Altima">
+    <h2>Nissan Altima</h2>
+    <p class="price" data-price="2500000">&#x20B9; 25,00,000</p>
+    <ul class="features">
+        <li>Top Speed: 130 mph</li>
+        <li>Horsepower: 188 hp</li>
+        <li>Engine: 2.5L Inline-4</li>
+        <li>Body: Sedan</li>
+    </ul>
+    <div class="quantity-control">
+        <button class="minus-btn" onclick="decrementQuantity(this)">-</button>
+        <span class="quantity">0</span>
+        <button class="plus-btn" onclick="incrementQuantity(this)">+</button>
+        <span class="total-price">Total: ₹0</span>
+    </div> 
+    </div>
+    <div class="car-card">
+    <img src="Img/gtr.png" alt="Nissan GT-R">
+    <h2>Nissan GT-R</h2>
+    <p class="price" data-price="20000000">&#x20B9; 2,00,00,000</p>
+    <ul class="features">
+        <li>Top Speed: 196 mph</li>
+        <li>Horsepower: 565 hp</li>
+        <li>Engine: 3.8L Twin-Turbo V6</li>
+        <li>Body: Coupe</li>
+    </ul><div class="quantity-control">
+        <button class="minus-btn" onclick="decrementQuantity(this)">-</button>
+        <span class="quantity">0</span>
+        <button class="plus-btn" onclick="incrementQuantity(this)">+</button>
+        <span class="total-price">Total: ₹0</span>
+    </div>
+    </div>
+    
+
+
+
+    <div class="car-card">
+    <img src="Img/370z.png" alt="Nissan 370Z">
+    <h2>Nissan 370Z</h2>
+    <p class="price" data-price="15000000">&#x20B9; 1,50,00,000</p>
+    <ul class="features">
+        <li>Top Speed: 155 mph</li>
+        <li>Horsepower: 332 hp</li>
+        <li>Engine: 3.7L V6</li>
+        <li>Body: Coupe</li>
+    </ul><div class="quantity-control">
+        <button class="minus-btn" onclick="decrementQuantity(this)">-</button>
+        <span class="quantity">0</span>
+        <button class="plus-btn" onclick="incrementQuantity(this)">+</button>
+        <span class="total-price">Total: ₹0</span>
+    </div>
+    </div>
+    <div class="car-card">
+    <img src="Img/maxima.jpg" alt="Nissan Maxima">
+    <h2>Nissan Maxima</h2>
+    <p class="price" data-price="3500000">&#x20B9; 35,00,000</p>
+    <ul class="features">
+        <li>Top Speed: 140 mph</li>
+        <li>Horsepower: 300 hp</li>
+        <li>Engine: 3.5L V6</li>
+        <li>Body: Sedan</li>
+    </ul><div class="quantity-control">
+        <button class="minus-btn" onclick="decrementQuantity(this)">-</button>
+        <span class="quantity">0</span>
+        <button class="plus-btn" onclick="incrementQuantity(this)">+</button>
+        <span class="total-price">Total: ₹0</span>
+    </div>
+    </div>
+      <div class="car-card">
+    <img src="Img/armada.png" alt="Nissan Armada">
+    <h2>Nissan Armada</h2>
+    <p class="price" data-price="5000000">&#x20B9; 50,00,000</p>
+    <ul class="features">
+        <li>Top Speed: 130 mph</li>
+        <li>Horsepower: 400 hp</li>
+        <li>Engine: 5.6L V8</li>
+        <li>Body: SUV</li>
+    </ul><div class="quantity-control">
+        <button class="minus-btn" onclick="decrementQuantity(this)">-</button>
+        <span class="quantity">0</span>
+        <button class="plus-btn" onclick="incrementQuantity(this)">+</button>
+        <span class="total-price">Total: ₹0</span>
+    </div>
+    </div>
+    
+    <div class="car-card">
+    <img src="Img/murano.png" alt="Nissan Murano">
+    <h2>Nissan Murano</h2>
+    <p class="price" data-price="3200000">&#x20B9; 32,00,000</p>
+    <ul class="features">
+        <li>Top Speed: 140 mph</li>
+        <li>Horsepower: 260 hp</li>
+        <li>Engine: 3.5L V6</li>
+        <li>Body: SUV</li>
+    </ul><div class="quantity-control">
+        <button class="minus-btn" onclick="decrementQuantity(this)">-</button>
+        <span class="quantity">0</span>
+        <button class="plus-btn" onclick="incrementQuantity(this)">+</button>
+        <span class="total-price">Total: ₹0</span>
+    </div>
+    </div>
+    <div class="car-card">
+    <img src="Img/path.png" alt="Nissan Pathfinder">
+    <h2>Nissan Pathfinder</h2>
+    <p class="price" data-price="3500000">&#x20B9; 35,00,000</p>
+    <ul class="features">
+        <li>Top Speed: 125 mph</li>
+        <li>Horsepower: 284 hp</li>
+        <li>Engine: 3.5L V6</li>
+        <li>Body: SUV</li>
+    </ul><div class="quantity-control">
+        <button class="minus-btn" onclick="decrementQuantity(this)">-</button>
+        <span class="quantity">0</span>
+        <button class="plus-btn" onclick="incrementQuantity(this)">+</button>
+        <span class="total-price">Total: ₹0</span>
+    </div>
+    </div>
+    <div class="car-card">
+    <img src="Img/sentra.png" alt="Nissan Sentra">
+    <h2>Nissan Sentra</h2>
+    <p class="price" data-price="2000000">&#x20B9; 20,00,000</p>
+    <ul class="features">
+        <li>Top Speed: 120 mph</li>
+        <li>Horsepower: 149 hp</li>
+        <li>Engine: 2.0L Inline-4</li>
+        <li>Body: Sedan</li>
+    </ul><div class="quantity-control">
+        <button class="minus-btn" onclick="decrementQuantity(this)">-</button>
+        <span class="quantity">0</span>
+        <button class="plus-btn" onclick="incrementQuantity(this)">+</button>
+        <span class="total-price">Total: ₹0</span>
+    </div>
+    </div>
+    <div class="car-card">
+    <img src="Img/rogue.png" alt="Nissan Rogue">
+    <h2>Nissan Rogue</h2>
+    <p class="price" data-price="3000000">&#x20B9; 30,00,000</p>
+    <ul class="features">
+        <li>Top Speed: 135 mph</li>
+        <li>Horsepower: 170 hp</li>
+        <li>Engine: 2.5L Inline-4</li>
+        <li>Body: SUV</li>
+    </ul><div class="quantity-control">
+        <button class="minus-btn" onclick="decrementQuantity(this)">-</button>
+        <span class="quantity">0</span>
+        <button class="plus-btn" onclick="incrementQuantity(this)">+</button>
+        <span class="total-price">Total: ₹0</span>
+    </div>
+    </div>
+
+    
+
+
+
+
+    <div class="car-card">
+    <img src="Img/versa.png" alt="Nissan Versa">
+    <h2>Nissan Versa</h2>
+    <p class="price" data-price="1800000">&#x20B9; 18,00,000</p>
+    <ul class="features">
+        <li>Top Speed: 120 mph</li>
+        <li>Horsepower: 122 hp</li>
+        <li>Engine: 1.6L Inline-4</li>
+        <li>Body: Sedan</li>
+    </ul>
+    <div class="quantity-control">
+        <button class="minus-btn" onclick="decrementQuantity(this)">-</button>
+        <span class="quantity">0</span>
+        <button class="plus-btn" onclick="incrementQuantity(this)">+</button>
+        <span class="total-price">Total: ₹0</span>
+    </div>
+    </div>
+    </section>
+    </section>
+    <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+    <footer>
+        <p>&copy; 2024 Car Minimilist <br> Shoaib Arif Tamboli</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

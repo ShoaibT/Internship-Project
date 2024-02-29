@@ -1,0 +1,111 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+p, h2 {
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+.currency-dropdown {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#currency-option {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 5px; 
+}
+img {
+    height: auto;
+    width: 100%;
+}
+.quantity-control {
+    padding: 5px;
+    margin: 5px;
+    background-color: ghostwhite;
+}
+#currency-option a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+#currency-option a:hover {
+    background-color: #ddd; 
+}
+
+#currency-option.show {
+    display: block;
+    animation: fadeIn 0.3s ease; 
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.car-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.car-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.car-card:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
+}
+
+
+.car-details {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+
+.car-card:hover .car-details {
+    transform: translateY(-10px);
+    opacity: 1;
+}
